@@ -10,7 +10,7 @@ int main(void)
 		char Capital_letter = 'A';
 		char Small_letter = 'a';
 
-		while (Small_letter <= 'Z' && Capital_letter <= 'z')
+		while (Small_letter <= 'z' && Capital_letter <= 'Z')
 		{
 			putchar(Small_letter);
 			putchar(Capital_letter);
