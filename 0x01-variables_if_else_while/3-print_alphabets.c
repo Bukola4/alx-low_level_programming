@@ -7,16 +7,23 @@
  */
 int main(void)
 {
-		char Capital_letter = 'A';
-		char Small_letter = 'a';
+		char ch;
 
-		while (Small_letter <= 'z' && Capital_letter <= 'Z')
+		putchar("Uppercase characters : \n");
+
+		for (ch = 'A'; ch <= 'Z'; ch++)
 		{
-			putchar(Small_letter);
-			putchar(Capital_letter);
-
-			Small_letter = Small_letter + 1;
-			Capital_letter = Capital_letter + 1;
+			putchar("%c ", ch);
 		}
-			putchar('\n');
+
+		putchar("\nLowercase characters : \n");
+		for (ch = 'a'; ch <= 'z'; ch++)
+		{
+			putchar("%c ", ch);
+		}
+
+		return (0);
 }
+
+	
+
