@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	char a;
+	char lower_case = 'a';
 
-	for (a = 'a'; a <= 'z'; a++)
+	while (lower_case <= 'z')
 	{
-		if (a == 'q' || a == 'e')
+		if (lower_case != 'e' && lower_case != 'q')
 	{
-		continue;
+		putchar(lower_case);
 	}
-	{
-		putchar(a);
+		lower_case++;
 	}
+	putchar('\n');
 	return (0);
 }

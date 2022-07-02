@@ -6,14 +6,12 @@
  */
 int main(void)
 {
-	int a = 0;
+	int base_10;
 
-	for (; a < 10; a++)
+	for (base_10 = 0; base_10 < 10; base_10++)
 	{
-		printf("%d" a);
+		printf("%i", base_10);
 	}
-	{
-		putchar('\n');
-	}
+	printf("\n");
 	return (0);
 }

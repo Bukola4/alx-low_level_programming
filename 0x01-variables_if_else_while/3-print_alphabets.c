@@ -6,13 +6,21 @@
  */
 int main(void)
 {
-	char a;
+	char Capital_letter = 'A';
+	char Small_letter = 'a';
 
-	for (a = 'a'; a <= 'z'; a++)
-		putchar(a);
-	for (a = 'A'; a <= 'Z'; a++)
-		putchar(a);
+	while (Small_letter <= 'z')
+	{
+		putchar(Small_letter);
+		Small_letter++;
+	}
+	while (Capital_letter <= 'Z')
+	{
+		putchar(Capital_letter);
+		Capital_letter++;
+	}
 		putchar('\n');
 	return (0);
 }
+
 
