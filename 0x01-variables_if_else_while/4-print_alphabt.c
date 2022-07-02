@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - Entry Point
+ *main - entry point
  *
  * Return: always 0
  */
@@ -10,15 +10,12 @@ int main(void)
 
 	for (a = 'a'; a <= 'z'; a++)
 	{
-		putchar(a);
+		if (a == 'q' || a == 'e')
+	{
+		continue;
 	}
-	for (a = 'A'; a <= 'Z'; a++)
 	{
 		putchar(a);
 	}
-	{
-		putchar('\n');
-	}
-	return (0)
+	return (0);
 }
-
