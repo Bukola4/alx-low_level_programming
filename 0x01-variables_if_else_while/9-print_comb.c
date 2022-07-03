@@ -13,7 +13,7 @@ int main(void)
 		putchar(single_digit);
 		if (single_digit != 57)
 	{
-		putchar(' , ');
+		putchar(',');
 		putchar(' ');
 	}
 	}
