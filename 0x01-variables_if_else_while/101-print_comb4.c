@@ -4,11 +4,11 @@
 /**
  *main - entry point
  *
- *Return: always 0
+ *Return: always 0 (success)
  */
 int main(void)
 {
-	int i, j, k
+	int i, j, k;
 
 	for (i = '0'; i < '8'; i++)
 	{
