@@ -6,25 +6,20 @@
  */
 int main(void)
 {
-	int x, y;
+	int i;
+	int j;
 
-	for (x = 48; x <= 57; x++)
+	for (i = 10; i <= 19; i++)
 	{
-	for (y = 48; y <= 57; y++)
+	for (j = 10; j <= 19; j++)
 	{
-		if (x ==y || y <= x)
+		if ((j % 10) > (i % 10))
 	{
-	}
-		else
+		putchar((i % 10) + '0');
+		putchar((j % 10) + '0');
+		if (i != 18 || j != 19)
 	{
-		putchar(x);
-		putchar(y);
-		if (x == 56 && y == 57)
-	{
-	}
-		else
-	{
-		putchar(' , ');
+		putchar(',');
 		putchar(' ');
 	}
 	}
