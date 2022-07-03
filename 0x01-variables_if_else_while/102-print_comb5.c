@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int i, j;
+	int j, i;
 
-	for (i = 0; j <= 99; j++)
+	for (j = 0; j <= 99; j++)
 	{
 	for (i = j, i <= 99; i++)
 	{
