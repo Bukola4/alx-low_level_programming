@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
 /**
  *main - entry point
  *
@@ -8,18 +6,18 @@
  */
 int main(void)
 {
-	int i, j, k;
+	int d, p, q;
 
-	for (i = '0'; i < '8'; i++)
+	for (d = '0'; d < '8'; d++)
 	{
-	for (j = i + 1; j < '9'; j++)
+	for (p = d + 1; p  < '9'; p++)
 	{
-	for (k = j + 1; k < '10'; k++)
+	for (q = p + 1; q  < '10'; q++)
 	{
-	putchar((i % 10) + '0';
-	putchar((j % 10) + '0';
-	putchar((k % 10) + '0';
-	if (i == '7' && j == '8' && k == '9')
+	putchar((d % 10) + '0');
+	putchar((p % 10) + '0');
+	putchar((q % 10) + '0');
+	if (d == '7' && p == '8' && q == '9')
 	continue;
 	putchar(',');
 	putchar(' ');
