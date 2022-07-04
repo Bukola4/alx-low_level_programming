@@ -8,11 +8,11 @@ int main(void)
 {
 	int d, p, q;
 
-	for (d = '0'; d < '8'; d++)
+	for (d = 0; d < 8; d++)
 	{
-	for (p = d + 1; p  < '9'; p++)
+	for (p = d + 1; p  < 9; p++)
 	{
-	for (q = p + 1; q  < '10'; q++)
+	for (q = p + 1; q  < 10; q++)
 	{
 	putchar((d % 10) + '0');
 	putchar((p % 10) + '0');
