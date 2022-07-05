@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *main - prints putchar
-@c: takes in a character
+*Description: A program that prints _putchar
 *Return: 0 success
 */
 int main(void)
