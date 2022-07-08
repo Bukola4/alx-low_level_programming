@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
-* print_line - printing line
-* @n: integer params
+* print_line - check for a digit
+* @n: number to be printed
+* Return: void
 */
+
 void print_line(int n)
 {
-int x;
 
-if (n <= 0)
-_putchar('\n');
-else
+int i = 0;
+
+while (i < n && n > 0)
 {
-for (x = 0; x < n; x++)
-_putchar(95);
+_putchar('_');
+i++;
+}
 _putchar('\n');
 }

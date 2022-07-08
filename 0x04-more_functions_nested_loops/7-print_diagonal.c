@@ -1,23 +1,30 @@
 #include "main.h"
 
 /**
-* print_diagonal - printing line
-*@n: integer params
+* print_diagonal - check for a digit
+* @n: number to be printed
+* Return: void
 */
+
 void print_diagonal(int n)
 {
-int x;
 
-if (n <= 0)
-_putchar('\n');
-else
+int i = 0, ii;
+
+while (i < n && n > 0)
 {
-for (x = 0; x < n; x++)
+ii = 0;
+while (ii < i)
 {
-for (i = 0; i < x; i++)
 _putchar(' ');
-_putchar(92);
+ii++;
+}
+
+_putchar('\\');
 _putchar('\n');
+i++;
 }
-}
+if (i == 0)
+_putchar('\n');
+
 }

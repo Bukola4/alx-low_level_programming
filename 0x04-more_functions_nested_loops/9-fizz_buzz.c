@@ -1,14 +1,42 @@
 #include "main.h"
-
 /**
-* fizz_buzz - printing to 100
+* main - check code
+*
+* Return: void
 */
 
-void fizz_buzz(void)
+int main(void)
 {
-int x;
 
-for (x = 0; x < 100; x++)
+int i = 1;
+
+while (i <= 100)
 {
-if
-printf("%d", x);
+if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FizzBuzz");
+}
+else if (i % 3 == 0)
+{
+printf("Fizz");
+}
+else if (i % 5 == 0)
+{
+printf("Buzz");
+}
+else
+{
+printf("%i", i);
+}
+
+if (i != 100)
+{
+putchar(' ');
+}
+
+i++;
+}
+putchar('\n');
+return (0);
+
+}
