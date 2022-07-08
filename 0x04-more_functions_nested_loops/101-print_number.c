@@ -19,7 +19,7 @@ unsigned int n1 = 0;
 if (n < 0)
 {
 n1 = -n;
-_putchar('_');
+_putchar('-');
 }
 
 else
