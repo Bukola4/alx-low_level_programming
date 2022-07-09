@@ -2,7 +2,7 @@
 
 /**
 * more_numbers - prints more numbers
-* Return: no return.
+* Return: Always 0
 */
 
 void more_numbers(void)
@@ -18,5 +18,6 @@ _putchar((ch / 10) + 48);
 _putchar((ch % 10) + 48);
 }
 _putchar('\n');
+return (0);
 }
 }
