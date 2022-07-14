@@ -7,7 +7,7 @@
 * @src: second param
 * Return: a string
 */
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src, int n)
 {
 int len = 0, i;
 
