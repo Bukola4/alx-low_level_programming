@@ -1,17 +1,28 @@
-#include "main.h"
+/*
+* File: 1-memcpy.c
+* Auth: Bukola Adegboyega
+*/
 
+#include "main.h"
 /**
 * _memcpy - memory copy
 * @dest: destination memory
 * @src: source memory
 * @n: number of bytes to be copied
+*
 * Return: string copied from source
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-unsigned int a;
+int i = 0;
+int j = 0;
 
-for (a = 0; a < n; a++)
-dest[a] = src[a];
+while (n > 0)
+{
+dest[i] = src[j];
+i++;
+j++;
+n--;
+}
 return (dest);
 }
