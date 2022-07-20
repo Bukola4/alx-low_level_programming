@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 int bandersnatch(char *s1, char *s2);
 char *move(char *s2);
@@ -39,7 +39,7 @@ int wildcmp(char *s1, char *s2)
 	}
 	/**
 	 * if we reached the end of both strings,
-	 * return 0
+	 * return
 	 */
 	if (*s1 == '\0' || *s2 == '\0')
 		return (0);
