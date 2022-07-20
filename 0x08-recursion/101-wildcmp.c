@@ -1,4 +1,4 @@
-#include "main.h"
+nclude "main.h"
 
 int bandersnatch(char *s1, char *s2);
 char *move(char *s2);
@@ -34,7 +34,7 @@ int wildcmp(char *s1, char *s2)
 	if (*s1 == *s2)
 	{
 		if (*s1 == '\0')
-		return (1);
+			return (1);
 		return (wildcmp(s1 + 1, s2 + 1));
 	}
 	/**
@@ -54,7 +54,7 @@ int wildcmp(char *s1, char *s2)
 	 * convert non-zero to 1, keeps 0 at 0, return
 	 */
 	if (*s2 == '*')
-{
+	{
 		s2 = move(s2);
 		if (*s2 == '\0')
 			return (1);
@@ -91,7 +91,7 @@ int bandersnatch(char *s1, char *s2)
 /**
  * *move - moves the current char past the *
  * @s2: string to iterate over
-*
+ *
  * Return: the address of the character after the *
  */
 char *move(char *s2)
