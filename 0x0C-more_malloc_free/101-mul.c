@@ -81,13 +81,14 @@ int get_digit(char c)
 
 	if (digit < 0 || digit > 9)
 	{
+
 		printf("Error\n");
 		exit(98);
+
 	}
-
 	return (digit);
-}
 
+}
 /**
  * get_prod - Multiplies a string of numbers by a single digit.
  * @prod: The buffer to store the result.
@@ -100,25 +101,25 @@ int get_digit(char c)
  */
 void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
+
 	int mult_len, num, tens = 0;
-
 	mult_len = find_len(mult) - 1;
-	mult += mult_len;
 
+	mult += mult_len;
 	while (*prod)
 	{
 		*prod = 'x';
 		prod++;
+
 	}
 
 	prod--;
-
 	while (zeroes--)
 	{
 		*prod = '0';
 		prod--;
-	}
 
+	}
 	for (; mult_len >= 0; mult_len--, mult--, prod--)
 	{
 		if (*mult < '0' || *mult > '9')
@@ -126,7 +127,6 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 			printf("Error\n");
 			exit(98);
 		}
-
 		num = (*mult - '0') * digit;
 		num += tens;
 		*prod = (num % 10) + '0';
