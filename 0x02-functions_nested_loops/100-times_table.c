@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* print_times_table - prints times table
-* @n: number of the times table
-* Description: prints the times table
-* Return: void
-*/
+ * print_times_table - prints time table
+ * @n : times table to use
+ * Description: prints the times table
+ * Return:void
+ */
 
 void print_times_table(int n)
 {
@@ -37,7 +37,7 @@ _putchar('0' + rep % 10);
 else
 {
 _putchar('0' + rep / 100);
-_putchar('0' + (rep - 100) / 10;
+_putchar('0' + (rep - 100) / 10);
 _putchar('0' + rep % 10);
 }
 if (b < n)
