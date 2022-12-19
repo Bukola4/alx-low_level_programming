@@ -24,4 +24,4 @@ oclean:
 fclean: clean oclean
 
 # deletes all & recompiles all source files
-re: oclean alll
+re: oclean all
